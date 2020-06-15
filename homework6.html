@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by Mohammed-Shoaib01 (http://jsbin.com/yexopog/21/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <shortcut id="nav">
+    <div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#ingredients">Go to Ingredients</a></li>
+        <li><a href="#actual-recipe">Go to Recipe</a></li>
+        <li><a href="#other-recipes">Go to other recipes</a></li>
+      </ul>
+    </div>
+  </shortcut>
+  <k class="h">
+    <title>French Toast</title>
+    <h1 class = "h1">French Toast </h1>
+    <p> <span class="first">French Toast</span> is an amazing yet easy <span>breakfast snack</span> that can be made with <span>simple ingredients</span>.</p>
+    <p>It can be made as a breakfast dish for your morning yummy meals!!</p>
+  </k>
+<style id="jsbin-css">
+body{
+  margin-left:0px;
+  background-color :#FFE5B4 ;
+}
+
+@media screen and (max-width: 400px){
+  #other-recipes{
+    display:none;}
+  .ul-list{
+    display:none;
+  }
+  
+  
+}
+@media screen and (max-width: 750px) and (min-width: 401px){
+  #other-recipes{
+    display:none;}
+  .ul-list{
+    display:show;
+  }
+}
+@media all and (min-width: 7510px){
+   #other-recipes{
+    display:show;}
+   .ul-list{
+    display:show;
+  }
+}
+  
+   
+#nav div{
+  background-color :#FF8000;
+  width:100%;
+}
+
+shortcut ul{
+  list-style:none;
+  padding-left:0;
+  display:flex;
+  justify-content:center;
+  
+}
+
+
+shortcut li{
+  font-size: 30px;
+  background-color:#FF8000;
+}
+shortcut li:hover{
+  background-color:#FFA952;
+}
+
+shortcut a{
+  text-decoration:none;
+  color:white;
+  display:block;
+  padding:0 10px;
+}
+
+
+.h{
+  text-align:center;
+}
+
+recipe{
+  display:flex;
+  flex-flow:row wrap;
+}
+
+recipe header{
+  width:50%;
+}
+
+recipe  main{
+  width:50%;
+}
+
+.h1 {
+  text-decoration:underline;
+  text-decoration:bold;
+  padding-bottom:20px;
+  font-size : 40px;
+}
+
+p {
+  
+  font-size : 20px;
+  
+}
+
+.ul-list li{
+  list-style: none;
+}
+
+.ul-list li:before{
+  content: '🍽️';
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+#actual-recipe {
+  font-size :20px;
+  background-color :lightgrey ;
+  
+}
+
+#actual-recipe ol {
+  list-style-type:lower-roman ;
+}
+
+.header-size {
+  background-color :#FFE5 ;
+  font-size :21px;
+}
+
+.recipe-ft {
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:5px;
+  padding-left:5px;
+  outline: 5px dashed grey;
+  width: 333px;
+  heigth: auto;
+}
+
+#other-recipes{
+  font-size:18px;
+}
+
+  /*https://www.w3schools.com/html/html_css.asp*/
+/*This is the website I use as a refrence for CSS*/
+
+p > span:last-child{
+  text-decoration : underline ;
+}
+
+
+/* https://www.freecodecamp.org/news/css-selectors-cheat-sheet */
+
+
+p > span {
+  font-style:italic;
+}
+p > span.first{
+  font-style : inherit ;
+  color:red;  
+}
+
+
+.refer{
+  color: maroon;
+}
+</style>
+</head>
+<body>
+  
+ 
+  <!-- This is the main heading and the topic of the recipe. -->
+  
+  <h1 class="h">How to make French Toast</h1>
+  <!-- just a normal paragraph -->
+  
+  
+  <!-- this is where the actual unordered list starts-->
+  
+  <recipe>
+    <header class="header-size" id = "ingredients">
+      <p>You'll need the following ingredients:</p>
+      <ul class = "ul-list">
+        <li>Fresh Bread</li>
+        <li>Eggs </li>
+        <li>Sugar</li>
+      </ul>
+    </header>
+  
+  
+    
+    <!--This is where the ordered list starts-->
+  
+  
+    <main id = "actual-recipe" class = "ol-id">
+      <p>Make French Toast now using the recipe below!! : </p>
+      <ol>
+        <li>Wisk the eggs. 🥚 </li>
+        <li>Using a bread knife slice the bread into medium size slices. 🔪🍞 </li>
+        <li>Use sugar as needed and mix it well with bread slices. 😋🤤</li>
+        <li>Now dip the bread into egg and cover the slice properly. 😍</li>
+        <li>Fry both sides with minimum required oil/butter and enjoy!🍴😊 </li>
+      </ol>
+    </main>
+  
+  
+    
+  </recipe>
+  <image>
+      <ul class = "ul-list" >
+        <li> <img src = "https://i.imgur.com/wKQPhZU.jpg" class = "recipe-ft"  > </li>
+        <li> <img src = "https://i.imgur.com/xWChV5U.jpg" alt = "French Toast"  class = "recipe-ft"  > </li>
+      </ul>
+  </image>
+  <h3 Class = >Here are websites with a variation of the same recipe:</h3>
+  <p>These sites are:</p>
+  
+  
+  <footer id ="other-recipes" class = "ul-id">
+    <ul class = "ul-list" >
+      <li><a href="https://www.simplyrecipes.com/recipes/french_toast">French Toast</a></li>
+      <li><a href="https://www.mccormick.com/recipes/breakfast-brunch/quick-and-easy-french-toast">Quick and Easy French Toast</a></li>
+      <li><a href="https://www.foodnetwork.com/recipes/robert-irvine/french-toast-recipe-1951408">French Toast Recipe</a></li>
+      <li><a href="https://www.allrecipes.com/recipe/7016/french-toast-i/">French Toast</a></li>
+      <li><a href="https://addapinch.com/perfect-french-toast-recipe/">Perfect French Toast Recipe</a></li>
+    </ul>
+  </footer>
+
+  <!--   https://www.w3schools.com/html/html_css.asp
+      This is the website I use as a refrence for CSS-->
+
+  </body>
+</html>
